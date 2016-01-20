@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="MYWEBWEBSITE">
+            <Directory Id="dirF18F960DDAA587F3E0D1351080C39B6B" Name="bin" />
+            <Directory Id="dir59974E7D7DB4F57FD9EBC3E7E8F5C7A6" Name="Content" />
+            <Directory Id="dir58623E97E90CB332F059315D59331719" Name="fonts" />
+            <Directory Id="dirDC3A0DE3797C9F66B52B269893B8CFDF" Name="Scripts" />
+            <Directory Id="dir986FF66F59BDB66C77B8931CC9BF21F4" Name="Views" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="MyWebWebComponents">
+            <Component Id="cmpA2785B9DBF2E8E879148ACEE2AE0FCA5" Directory="MYWEBWEBSITE" Guid="{C77A37FA-8B17-4DBB-A3FC-40C30711EBFD}">
+                <File Id="fil69B7A1E41915FD1073EF6A5FCC697A0B" KeyPath="yes" Source="$(var.publishDir)\favicon.ico" />
+            </Component>
+            <Component Id="cmp3B7C6C24D74F00AA012B4207643303A2" Directory="MYWEBWEBSITE" Guid="{744B5177-4213-48FF-A9FA-9E0CFD7B2EA2}">
+                <File Id="fil11831662ED7816C15988B6C0D07F9B5A" KeyPath="yes" Source="$(var.publishDir)\packages.config" />
+            </Component>
+            <Component Id="cmp8A32455F8A27729219AC483842C83495" Directory="MYWEBWEBSITE" Guid="{62975721-D14B-4ED0-A331-1E0C6E26493F}">
+                <File Id="fil4EFEB8403E3864CF4C1B2562397C537A" KeyPath="yes" Source="$(var.publishDir)\PrecompiledApp.config" />
+            </Component>
+            <Component Id="cmpCC43A1F4555D22B67F24CBCC76D92119" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{F1A94282-7A9D-4958-B7A3-A4F51C38A785}">
+                <File Id="fil74822007B2871C7919C8F8160CB1049C" KeyPath="yes" Source="$(var.publishDir)\bin\about.cshtml.a8d08dba.compiled" />
+            </Component>
+            <Component Id="cmp25759A193B6B1B9933604559156E56B5" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{ADD964FF-DCAC-4B74-9FF5-1675669FF7D5}">
+                <File Id="filA70D8573F4575CA120F124E95BAACFB6" KeyPath="yes" Source="$(var.publishDir)\bin\addphonenumber.cshtml.68f676f.compiled" />
+            </Component>
+            <Component Id="cmp179B22E3E95E9A0A5861220C925C5479" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{909091ED-10B4-4261-964C-760A0807A67B}">
+                <File Id="fil4C11C8D354F757B78531B6DB3D7A2115" KeyPath="yes" Source="$(var.publishDir)\bin\Antlr3.Runtime.dll" />
+            </Component>
+            <Component Id="cmp5E9C0EAB1CFD925CF51005339A53232D" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{C11D30D5-5753-4623-AD9E-A145B8756146}">
+                <File Id="fil621261FA54EC1E68C74B5982219247D1" KeyPath="yes" Source="$(var.publishDir)\bin\App_global.asax.compiled" />
+            </Component>
+            <Component Id="cmpBB1BD21040A049964676B1C1CD14A0BC" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{BEF4F41D-3C78-4E50-9169-6C9394ACE342}">
+                <Class Id="{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}" Context="InprocServer32" Description="ASP.global_asax" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP.global_asax" Description="ASP.global_asax" />
+                </Class>
+                <File Id="filB4A86ACF2F6933E46DE55B485E6DCC15" KeyPath="yes" Source="$(var.publishDir)\bin\App_global.asax.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32\0.0.0.0" Name="Class" Value="ASP.global_asax" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_global.asax, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filB4A86ACF2F6933E46DE55B485E6DCC15]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32" Name="Class" Value="ASP.global_asax" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32" Name="Assembly" Value="App_global.asax, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{6E8E2057-ECB3-3E2B-8608-A3A2495D3A06}\InprocServer32" Name="CodeBase" Value="file:///[#filB4A86ACF2F6933E46DE55B485E6DCC15]" Type="string" Action="write" />
+            </Component>
+            <Component Id="cmpAC99413F3B0ADE0E6E45DF18E47A0C4E" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{CCB6E267-83B3-4FC0-8ECE-5C88C5796438}">
+                <Class Id="{08FDF41D-33D2-3A8B-8685-62A17C46685C}" Context="InprocServer32" Description="ASP._Page_Views_Account_SendCode_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_SendCode_cshtml" Description="ASP._Page_Views_Account_SendCode_cshtml" />
+                </Class>
+                <Class Id="{3DE28692-CF3E-3120-82CF-DDBC35754854}" Context="InprocServer32" Description="ASP._Page_Views_Account_ConfirmEmail_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_ConfirmEmail_cshtml" Description="ASP._Page_Views_Account_ConfirmEmail_cshtml" />
+                </Class>
+                <Class Id="{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}" Context="InprocServer32" Description="ASP._Page_Views_Account_ForgotPasswordConfirmation_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_ForgotPasswordConfirmation_cshtml" Description="ASP._Page_Views_Account_ForgotPasswordConfirmation_cshtml" />
+                </Class>
+                <Class Id="{4F51AAD0-554A-3B18-BCA7-97123137951A}" Context="InprocServer32" Description="ASP._Page_Views_Account_ResetPasswordConfirmation_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_ResetPasswordConfirmation_cshtml" Description="ASP._Page_Views_Account_ResetPasswordConfirmation_cshtml" />
+                </Class>
+                <Class Id="{52E19287-6459-39D6-AFF5-6BC6B64DD621}" Context="InprocServer32" Description="ASP._Page_Views_Account__ExternalLoginsListPartial_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account__ExternalLoginsListPartial_cshtml" Description="ASP._Page_Views_Account__ExternalLoginsListPartial_cshtml" />
+                </Class>
+                <Class Id="{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}" Context="InprocServer32" Description="ASP._Page_Views_Account_ForgotPassword_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_ForgotPassword_cshtml" Description="ASP._Page_Views_Account_ForgotPassword_cshtml" />
+                </Class>
+                <Class Id="{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}" Context="InprocServer32" Description="ASP._Page_Views_Account_VerifyCode_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_VerifyCode_cshtml" Description="ASP._Page_Views_Account_VerifyCode_cshtml" />
+                </Class>
+                <Class Id="{89574963-B3B7-31DC-996E-16D453320525}" Context="InprocServer32" Description="ASP._Page_Views_Account_Register_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_Register_cshtml" Description="ASP._Page_Views_Account_Register_cshtml" />
+                </Class>
+                <Class Id="{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}" Context="InprocServer32" Description="ASP._Page_Views_Account_ExternalLoginFailure_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_ExternalLoginFailure_cshtml" Description="ASP._Page_Views_Account_ExternalLoginFailure_cshtml" />
+                </Class>
+                <Class Id="{EE1AF261-967A-34D4-90E5-52F4B84A9328}" Context="InprocServer32" Description="ASP._Page_Views_Account_ResetPassword_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_ResetPassword_cshtml" Description="ASP._Page_Views_Account_ResetPassword_cshtml" />
+                </Class>
+                <Class Id="{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}" Context="InprocServer32" Description="ASP._Page_Views_Account_Login_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_Login_cshtml" Description="ASP._Page_Views_Account_Login_cshtml" />
+                </Class>
+                <Class Id="{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}" Context="InprocServer32" Description="ASP._Page_Views_Account_ExternalLoginConfirmation_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Account_ExternalLoginConfirmation_cshtml" Description="ASP._Page_Views_Account_ExternalLoginConfirmation_cshtml" />
+                </Class>
+                <File Id="filD69A766EF254D2B5F95A0AD038A878D4" KeyPath="yes" Source="$(var.publishDir)\bin\App_Web_2pycqhvw.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_SendCode_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_SendCode_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{08FDF41D-33D2-3A8B-8685-62A17C46685C}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_ConfirmEmail_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_ConfirmEmail_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3DE28692-CF3E-3120-82CF-DDBC35754854}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_ForgotPasswordConfirmation_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_ForgotPasswordConfirmation_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{3E5009EE-80C4-34B3-A61A-17239AFC4EBE}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_ResetPasswordConfirmation_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_ResetPasswordConfirmation_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{4F51AAD0-554A-3B18-BCA7-97123137951A}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account__ExternalLoginsListPartial_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account__ExternalLoginsListPartial_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{52E19287-6459-39D6-AFF5-6BC6B64DD621}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_ForgotPassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_ForgotPassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{75A2E992-16F7-3706-88C2-4CFAD36CFC8E}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_VerifyCode_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_VerifyCode_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{78031D98-CEEB-3C0D-A924-FB86D9CA4E19}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_Register_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_Register_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{89574963-B3B7-31DC-996E-16D453320525}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_ExternalLoginFailure_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_ExternalLoginFailure_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{E17223BC-DAB1-33E2-B24B-DAA6EA1FDA95}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_ResetPassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_ResetPassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EE1AF261-967A-34D4-90E5-52F4B84A9328}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_Login_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_Login_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{EFCF5D7F-5767-3130-B1F8-C1DD5FDC8D28}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Account_ExternalLoginConfirmation_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32" Name="Class" Value="ASP._Page_Views_Account_ExternalLoginConfirmation_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32" Name="Assembly" Value="App_Web_2pycqhvw, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{FE6D120E-CE0B-3FBE-8B86-4130CE5FE829}\InprocServer32" Name="CodeBase" Value="file:///[#filD69A766EF254D2B5F95A0AD038A878D4]" Type="string" Action="write" />
+            </Component>
+            <Component Id="cmp52BF35034FBB4D735D44229FAB435C68" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{4D6A7343-6CE8-45B4-86D7-9008B4F23DA4}">
+                <Class Id="{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}" Context="InprocServer32" Description="ASP._Page_Views_Stocks_Create_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Stocks_Create_cshtml" Description="ASP._Page_Views_Stocks_Create_cshtml" />
+                </Class>
+                <Class Id="{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}" Context="InprocServer32" Description="ASP._Page_Views_Stocks_Delete_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Stocks_Delete_cshtml" Description="ASP._Page_Views_Stocks_Delete_cshtml" />
+                </Class>
+                <Class Id="{9601A6D7-237C-38E5-B0F5-96DB0725E269}" Context="InprocServer32" Description="ASP._Page_Views_Stocks_Index_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Stocks_Index_cshtml" Description="ASP._Page_Views_Stocks_Index_cshtml" />
+                </Class>
+                <Class Id="{D095A996-0391-392E-AC0C-EC172ADD82A5}" Context="InprocServer32" Description="ASP._Page_Views_Stocks_Edit_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Stocks_Edit_cshtml" Description="ASP._Page_Views_Stocks_Edit_cshtml" />
+                </Class>
+                <Class Id="{F04BC961-BF62-37DD-9A1D-839F416903AC}" Context="InprocServer32" Description="ASP._Page_Views_Stocks_Details_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Stocks_Details_cshtml" Description="ASP._Page_Views_Stocks_Details_cshtml" />
+                </Class>
+                <File Id="fil20F821E32ADD593610D724F7B8977B1C" KeyPath="yes" Source="$(var.publishDir)\bin\App_Web_4dqq00oc.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Stocks_Create_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32" Name="Class" Value="ASP._Page_Views_Stocks_Create_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{1076F806-A4E7-3FFB-A393-309A5CC4CDAA}\InprocServer32" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Stocks_Delete_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32" Name="Class" Value="ASP._Page_Views_Stocks_Delete_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{284C3BAF-A2C6-3F88-A20B-8D9E9867DC85}\InprocServer32" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Stocks_Index_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32" Name="Class" Value="ASP._Page_Views_Stocks_Index_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{9601A6D7-237C-38E5-B0F5-96DB0725E269}\InprocServer32" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Stocks_Edit_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32" Name="Class" Value="ASP._Page_Views_Stocks_Edit_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{D095A996-0391-392E-AC0C-EC172ADD82A5}\InprocServer32" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Stocks_Details_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32" Name="Class" Value="ASP._Page_Views_Stocks_Details_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32" Name="Assembly" Value="App_Web_4dqq00oc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F04BC961-BF62-37DD-9A1D-839F416903AC}\InprocServer32" Name="CodeBase" Value="file:///[#fil20F821E32ADD593610D724F7B8977B1C]" Type="string" Action="write" />
+            </Component>
+            <Component Id="cmpAC840FB5D44C1AB01DADD71EC628DDA2" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{4E5EE8CB-CC4C-4616-8CAE-79B9DC4200E1}">
+                <Class Id="{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}" Context="InprocServer32" Description="ASP._Page_Views__ViewStart_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views__ViewStart_cshtml" Description="ASP._Page_Views__ViewStart_cshtml" />
+                </Class>
+                <File Id="filB13E8FEB0CB895A1EDF792F613130AF8" KeyPath="yes" Source="$(var.publishDir)\bin\App_Web_enrfmzyc.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views__ViewStart_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_enrfmzyc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#filB13E8FEB0CB895A1EDF792F613130AF8]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32" Name="Class" Value="ASP._Page_Views__ViewStart_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32" Name="Assembly" Value="App_Web_enrfmzyc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{A9C0D74E-EF03-3D9D-8C8D-A225B00AC0EF}\InprocServer32" Name="CodeBase" Value="file:///[#filB13E8FEB0CB895A1EDF792F613130AF8]" Type="string" Action="write" />
+            </Component>
+            <Component Id="cmpF7A7DFAA223562919E38C7712C02005A" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{CC18C4B0-14C2-4346-9F60-4A82232ADAF6}">
+                <Class Id="{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}" Context="InprocServer32" Description="ASP._Page_Views_Shared_Error_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Shared_Error_cshtml" Description="ASP._Page_Views_Shared_Error_cshtml" />
+                </Class>
+                <Class Id="{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}" Context="InprocServer32" Description="ASP._Page_Views_Shared__Layout_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Shared__Layout_cshtml" Description="ASP._Page_Views_Shared__Layout_cshtml" />
+                </Class>
+                <Class Id="{347E2686-7029-362F-A841-2AABC9A27701}" Context="InprocServer32" Description="ASP._Page_Views_Shared_Lockout_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Shared_Lockout_cshtml" Description="ASP._Page_Views_Shared_Lockout_cshtml" />
+                </Class>
+                <Class Id="{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}" Context="InprocServer32" Description="ASP._Page_Views_Shared__LoginPartial_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Shared__LoginPartial_cshtml" Description="ASP._Page_Views_Shared__LoginPartial_cshtml" />
+                </Class>
+                <File Id="fil1893BBC1F9762A461299F2D771D4B555" KeyPath="yes" Source="$(var.publishDir)\bin\App_Web_ob4sfhz5.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Shared_Error_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32" Name="Class" Value="ASP._Page_Views_Shared_Error_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{13BDAA74-AC70-3F26-AD29-4DF0A07B8DB3}\InprocServer32" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Shared__Layout_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32" Name="Class" Value="ASP._Page_Views_Shared__Layout_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{21F7E64F-7174-38E8-AEBC-92EA4C44BFE2}\InprocServer32" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Shared_Lockout_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32" Name="Class" Value="ASP._Page_Views_Shared_Lockout_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{347E2686-7029-362F-A841-2AABC9A27701}\InprocServer32" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Shared__LoginPartial_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32" Name="Class" Value="ASP._Page_Views_Shared__LoginPartial_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32" Name="Assembly" Value="App_Web_ob4sfhz5, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{497365B2-8AB0-3FC1-B56A-F16B02D9FF2B}\InprocServer32" Name="CodeBase" Value="file:///[#fil1893BBC1F9762A461299F2D771D4B555]" Type="string" Action="write" />
+            </Component>
+            <Component Id="cmp284DF378F3C91B16C3B94CB759C2024B" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{9F760DC2-5D2A-418B-866A-E2ED402FC473}">
+                <Class Id="{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}" Context="InprocServer32" Description="ASP._Page_Views_Manage_VerifyPhoneNumber_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Manage_VerifyPhoneNumber_cshtml" Description="ASP._Page_Views_Manage_VerifyPhoneNumber_cshtml" />
+                </Class>
+                <Class Id="{77CA12CC-A2F2-34EF-9336-F23B67293C60}" Context="InprocServer32" Description="ASP._Page_Views_Manage_AddPhoneNumber_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Manage_AddPhoneNumber_cshtml" Description="ASP._Page_Views_Manage_AddPhoneNumber_cshtml" />
+                </Class>
+                <Class Id="{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}" Context="InprocServer32" Description="ASP._Page_Views_Manage_ChangePassword_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Manage_ChangePassword_cshtml" Description="ASP._Page_Views_Manage_ChangePassword_cshtml" />
+                </Class>
+                <Class Id="{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}" Context="InprocServer32" Description="ASP._Page_Views_Manage_Index_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Manage_Index_cshtml" Description="ASP._Page_Views_Manage_Index_cshtml" />
+                </Class>
+                <Class Id="{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}" Context="InprocServer32" Description="ASP._Page_Views_Manage_SetPassword_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Manage_SetPassword_cshtml" Description="ASP._Page_Views_Manage_SetPassword_cshtml" />
+                </Class>
+                <Class Id="{F9512A64-5764-3C11-AD55-D34438D623A0}" Context="InprocServer32" Description="ASP._Page_Views_Manage_ManageLogins_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Manage_ManageLogins_cshtml" Description="ASP._Page_Views_Manage_ManageLogins_cshtml" />
+                </Class>
+                <File Id="fil700625EBFEDEFA24F3941E8164D96568" KeyPath="yes" Source="$(var.publishDir)\bin\App_Web_wi1i4qcs.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Manage_VerifyPhoneNumber_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32" Name="Class" Value="ASP._Page_Views_Manage_VerifyPhoneNumber_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{166F6C8E-6E4B-3B90-83A4-058CDFD892FD}\InprocServer32" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Manage_AddPhoneNumber_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32" Name="Class" Value="ASP._Page_Views_Manage_AddPhoneNumber_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{77CA12CC-A2F2-34EF-9336-F23B67293C60}\InprocServer32" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Manage_ChangePassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32" Name="Class" Value="ASP._Page_Views_Manage_ChangePassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{7C230FBC-0839-3BBA-AE87-3EEF2E2EDC4F}\InprocServer32" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Manage_Index_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32" Name="Class" Value="ASP._Page_Views_Manage_Index_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{CD54AF37-0BB6-3CEB-B5F6-6429B6366933}\InprocServer32" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Manage_SetPassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32" Name="Class" Value="ASP._Page_Views_Manage_SetPassword_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{DABB458F-0438-35BF-BC45-25D6FF1ADCD3}\InprocServer32" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Manage_ManageLogins_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32" Name="Class" Value="ASP._Page_Views_Manage_ManageLogins_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32" Name="Assembly" Value="App_Web_wi1i4qcs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{F9512A64-5764-3C11-AD55-D34438D623A0}\InprocServer32" Name="CodeBase" Value="file:///[#fil700625EBFEDEFA24F3941E8164D96568]" Type="string" Action="write" />
+            </Component>
+            <Component Id="cmp5BE5D161F935279F22F3F5456724A9E4" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{792ED344-1BAA-4F0D-8082-B65AC6261C91}">
+                <Class Id="{2F79D7E1-8498-323A-8CCF-3D8477A031F0}" Context="InprocServer32" Description="ASP._Page_Views_Home_Contact_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Home_Contact_cshtml" Description="ASP._Page_Views_Home_Contact_cshtml" />
+                </Class>
+                <Class Id="{37014D0B-4DA3-31A4-BFAD-52357A789EF8}" Context="InprocServer32" Description="ASP._Page_Views_Home_Index_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Home_Index_cshtml" Description="ASP._Page_Views_Home_Index_cshtml" />
+                </Class>
+                <Class Id="{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}" Context="InprocServer32" Description="ASP._Page_Views_Home_About_cshtml" ThreadingModel="both" ForeignServer="mscoree.dll">
+                    <ProgId Id="ASP._Page_Views_Home_About_cshtml" Description="ASP._Page_Views_Home_About_cshtml" />
+                </Class>
+                <File Id="fil02C46F1DE83C690EDDBE59734AF6DAE8" KeyPath="yes" Source="$(var.publishDir)\bin\App_Web_yhifubow.dll" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Home_Contact_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_yhifubow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil02C46F1DE83C690EDDBE59734AF6DAE8]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32" Name="Class" Value="ASP._Page_Views_Home_Contact_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32" Name="Assembly" Value="App_Web_yhifubow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{2F79D7E1-8498-323A-8CCF-3D8477A031F0}\InprocServer32" Name="CodeBase" Value="file:///[#fil02C46F1DE83C690EDDBE59734AF6DAE8]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Home_Index_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_yhifubow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil02C46F1DE83C690EDDBE59734AF6DAE8]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32" Name="Class" Value="ASP._Page_Views_Home_Index_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32" Name="Assembly" Value="App_Web_yhifubow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{37014D0B-4DA3-31A4-BFAD-52357A789EF8}\InprocServer32" Name="CodeBase" Value="file:///[#fil02C46F1DE83C690EDDBE59734AF6DAE8]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}" Value="" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32\0.0.0.0" Name="Class" Value="ASP._Page_Views_Home_About_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32\0.0.0.0" Name="Assembly" Value="App_Web_yhifubow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32\0.0.0.0" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32\0.0.0.0" Name="CodeBase" Value="file:///[#fil02C46F1DE83C690EDDBE59734AF6DAE8]" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32" Name="Class" Value="ASP._Page_Views_Home_About_cshtml" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32" Name="Assembly" Value="App_Web_yhifubow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
+                <RegistryValue Root="HKCR" Key="CLSID\{BD762B5D-DC17-3CEC-BAA1-983C866C93A3}\InprocServer32" Name="CodeBase" Value="file:///[#fil02C46F1DE83C690EDDBE59734AF6DAE8]" Type="string" Action="write" />
+            </Component>
+            <Component Id="cmp246952630A0F0DD6964BE5D4CB66C6AF" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{3E01CC4F-AB09-4930-B998-15B039D3C7F1}">
+                <File Id="fil1A0E6D2AE83F3C89B7398955AFD26089" KeyPath="yes" Source="$(var.publishDir)\bin\changepassword.cshtml.68f676f.compiled" />
+            </Component>
+            <Component Id="cmpB2860FA60AEF559EF726ADA29946F941" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{075B684B-4D2E-45D8-8C72-AA34E11C51AB}">
+                <File Id="fil67283035293900EC9A53EAE90C00EBF2" KeyPath="yes" Source="$(var.publishDir)\bin\confirmemail.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp90E3A077030315D5B892CF76CC3DCABC" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{678F0E07-584A-4F91-B342-4CFFE4A73EEE}">
+                <File Id="fil566F36D5C14657300C317412B5B9DE4D" KeyPath="yes" Source="$(var.publishDir)\bin\contact.cshtml.a8d08dba.compiled" />
+            </Component>
+            <Component Id="cmp61B8BCB3C32EF20F8AB614304F40B6CD" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{AA9845E6-7728-4563-895D-BCAF274448B8}">
+                <File Id="filD92701CC946E7A5773C9C407FC1DDD76" KeyPath="yes" Source="$(var.publishDir)\bin\create.cshtml.bcbfd8ec.compiled" />
+            </Component>
+            <Component Id="cmp5E39B5FE5FC8971C65D61C6C0091177F" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{E5792EDB-8E2C-4C1D-AE97-B53C3F1A82ED}">
+                <File Id="fil954419C8CF939B745AFBDFCCDE8D2D6B" KeyPath="yes" Source="$(var.publishDir)\bin\delete.cshtml.bcbfd8ec.compiled" />
+            </Component>
+            <Component Id="cmp01706FD02461A04228C2468C1AF6B729" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{24621ACB-3A79-4065-B7AE-D54F71C24DC4}">
+                <File Id="fil84AE99D93B48542405370C18C4AB0AE1" KeyPath="yes" Source="$(var.publishDir)\bin\details.cshtml.bcbfd8ec.compiled" />
+            </Component>
+            <Component Id="cmp5B4BD0680D6234F04BBB902D2A292295" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{0A6AC1A0-0C0B-43A0-A760-7BA55517EB06}">
+                <File Id="fil1D20FF4E314FF58E2945713F94DD3189" KeyPath="yes" Source="$(var.publishDir)\bin\edit.cshtml.bcbfd8ec.compiled" />
+            </Component>
+            <Component Id="cmp5CE67AE95E4687BC47B2A2E164BC7D56" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{1CF9A05E-F7F0-4490-8CF7-2C93E8FAB6FE}">
+                <File Id="fil505BF3C53B92F0E686178F5407CF807B" KeyPath="yes" Source="$(var.publishDir)\bin\EntityFramework.dll" />
+            </Component>
+            <Component Id="cmp1F1297BA6D0FE24ECDA703D65B3CB232" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{DA502011-D71F-423B-A363-677B67818DFD}">
+                <File Id="fil5BE9DBCE32BB07ACA36D29B7D1C81F0A" KeyPath="yes" Source="$(var.publishDir)\bin\EntityFramework.SqlServer.dll" />
+            </Component>
+            <Component Id="cmp2AD11669E751E5D0612DD40462B4939C" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{3B8A43BF-97F5-4176-9FAB-6339505512B3}">
+                <File Id="fil3811C6F7548930A277542ED42ACD4A66" KeyPath="yes" Source="$(var.publishDir)\bin\error.cshtml.639c3968.compiled" />
+            </Component>
+            <Component Id="cmp9849A65054709634CEC669D4FE583E9E" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{1EE7F340-FCE0-4B71-AFA9-7653CFBF9765}">
+                <File Id="filAD6A5F12AECD50C5B7E182B548EE5CF9" KeyPath="yes" Source="$(var.publishDir)\bin\externalloginconfirmation.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmpBA546ED8E4E5D656C0D5077D8DBBDD86" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{6B05C541-7BEA-4840-868B-EE359E829639}">
+                <File Id="fil36B459D51E41E427B366E91496BBDDFE" KeyPath="yes" Source="$(var.publishDir)\bin\externalloginfailure.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmpC1B4C92F6A32A7D78C3434E7B268AD95" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{E8488A82-D61B-4F86-BFA5-1E469D288C7A}">
+                <File Id="fil9563F4B09BBDC6CF0D25B238C325082E" KeyPath="yes" Source="$(var.publishDir)\bin\forgotpassword.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp6F0FD8F3F0D2AFAE838F21791F06D468" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{98CA476A-C31C-45DE-8A77-EC2A177F0104}">
+                <File Id="filA35DEF7E69F4ABDD170943045D7A2291" KeyPath="yes" Source="$(var.publishDir)\bin\forgotpasswordconfirmation.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmpD436DB568950E305C881C724E055D300" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{BFFD4AB6-86F6-4A40-9066-B972B933863F}">
+                <File Id="fil28118DA263187AB65637431DFFDACC04" KeyPath="yes" Source="$(var.publishDir)\bin\index.cshtml.68f676f.compiled" />
+            </Component>
+            <Component Id="cmp19E879E7C30A96FB80994AEB41D2600A" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{7BC9D266-9E3C-405F-881C-B681F85C67B5}">
+                <File Id="fil654BFF1CDDEF6421DE9B030ACF453E4C" KeyPath="yes" Source="$(var.publishDir)\bin\index.cshtml.a8d08dba.compiled" />
+            </Component>
+            <Component Id="cmp254DF6097D0882921A69C928CE582328" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{FEB82889-B916-4E1D-AA89-EBB202395CDD}">
+                <File Id="fil1409E2947F92A7535F4117505AC3E731" KeyPath="yes" Source="$(var.publishDir)\bin\index.cshtml.bcbfd8ec.compiled" />
+            </Component>
+            <Component Id="cmp8897F603A015AC41BF4E09D8E0EDDAD4" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{EFCBA0D2-29EC-4327-9D88-7C9D722316C0}">
+                <File Id="filF821F55B2E919B98AD5EF3585EB40D54" KeyPath="yes" Source="$(var.publishDir)\bin\lockout.cshtml.639c3968.compiled" />
+            </Component>
+            <Component Id="cmp85258C3FD2883D6F4BCDB7550DB799EF" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{5C859ED2-5CAA-4DC1-A6AE-252D08D5F128}">
+                <File Id="fil9959E528E5EB9DC3F4CB66C8A7610499" KeyPath="yes" Source="$(var.publishDir)\bin\login.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp61BD1DBCD12BB1F4BAD469C8D555B73B" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{80594950-7E11-4963-A888-6B184BF53FE3}">
+                <File Id="fil4AB0BB756677A19ADD2FFFE49C1BC547" KeyPath="yes" Source="$(var.publishDir)\bin\managelogins.cshtml.68f676f.compiled" />
+            </Component>
+            <Component Id="cmp8E5A9D14CD35E140E1A6503B91BC2FB4" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{F6D4A2A8-8559-468F-AE77-AE6D5CFA3AF8}">
+                <File Id="filFB23BCA2C7094002E50921930E2F11B0" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.AspNet.Identity.Core.dll" />
+            </Component>
+            <Component Id="cmp145797B1A8FF17CB910427B6A8E8DD1C" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{9CDDC69C-37DC-4497-B9B5-25C6F009F373}">
+                <File Id="filE713BB45F93F4BC739CDE5E37A6E020D" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+            </Component>
+            <Component Id="cmp79ABA7B364EE8074CEFA77CEADAD5E0C" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{43D3350E-0167-4DB2-8E3D-EA81609A1248}">
+                <File Id="fil183F3903DBE6F81300433E6BA21DE749" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.AspNet.Identity.Owin.dll" />
+            </Component>
+            <Component Id="cmpB8B63E56E6C2B68CC58B7A5A7706E198" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{1880196C-D7A6-4F99-A29D-FB80006FE61D}">
+                <File Id="fil565F53D1A1AEF85E2CA18C6F74EDE863" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.dll" />
+            </Component>
+            <Component Id="cmp84C2621956E0B24911F51D92123FA691" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{B534A58F-711A-4951-B6F3-859C30CBE16C}">
+                <File Id="fil05537104D0FC30D91CDAD913222D5BEB" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Host.SystemWeb.dll" />
+            </Component>
+            <Component Id="cmp9F7F6428965961159754D41196AFAA40" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{1B897A1E-8867-42DC-927C-073B30704BCE}">
+                <File Id="fil053B4DC49ED27CF6BD0D2E5B36AD6CDF" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Security.Cookies.dll" />
+            </Component>
+            <Component Id="cmpDA686F3DCAA81027847F7203A8BC673C" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{0FCCB187-D198-4776-9469-0DDFEC31B187}">
+                <File Id="filF78E581F2509C9670243ADA85C3EAF82" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Security.dll" />
+            </Component>
+            <Component Id="cmpD64C7E43BAC29779BDD7B1F2F33ED8CF" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{95466120-3077-43BF-85C7-D1FF5FF52B35}">
+                <File Id="filC78F3C14658BFF6132B21A9D0B9983F1" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Security.Facebook.dll" />
+            </Component>
+            <Component Id="cmpFB9D76EA63CC03E407C10DC8D108F17D" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{F4C605B7-CEDC-433B-995A-B77E5EAA48E1}">
+                <File Id="fil98541B6EFE448AEFB6E57D200DDE63E8" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Security.Google.dll" />
+            </Component>
+            <Component Id="cmpBCD4824AAB8F20D8BA6D9921A26B994B" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{30586592-F008-4A47-B332-648F442BB69D}">
+                <File Id="filA622A654B028578CA17D68130833D928" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+            </Component>
+            <Component Id="cmp1CF17DB200A2D89DD404A2D524E692FD" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{5B68D075-DC67-44BC-8FE0-8B21BACD1443}">
+                <File Id="fil399E5EF6675D8081190A3D3366862170" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Security.OAuth.dll" />
+            </Component>
+            <Component Id="cmp7B1DC1BEADFA6B6197B941E857A184B4" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{B4FB112D-B8AC-4738-9FF6-33365457BC83}">
+                <File Id="fil577617FB85B59900521FD499A8D3C7D9" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Owin.Security.Twitter.dll" />
+            </Component>
+            <Component Id="cmp98C1EB9F8E04D5A9C50466DC4CA7E87B" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{250CCFB5-8B4D-421A-BEB4-14B4E0B40B0C}">
+                <File Id="filA7F3FCDE2A0FBFF245252CBB82916501" KeyPath="yes" Source="$(var.publishDir)\bin\Microsoft.Web.Infrastructure.dll" />
+            </Component>
+            <Component Id="cmp19DAE8EFFAEF24D666CF8E86DF503AB9" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{46D8CFC7-38AA-4ACF-B006-8AB520B9D3AA}">
+                <File Id="fil0DBE802310522751CA495269D86A52A1" KeyPath="yes" Source="$(var.publishDir)\bin\Newtonsoft.Json.dll" />
+            </Component>
+            <Component Id="cmp2421557D2B2C9E951BD85442C30B4992" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{BF62A153-4AF9-4167-9F8E-D6AFE75662B9}">
+                <File Id="filE1AD3FB900543A3633D5A9BAA280703A" KeyPath="yes" Source="$(var.publishDir)\bin\Owin.dll" />
+            </Component>
+            <Component Id="cmp3FF63513E6E2CF637BE03D76525F26F5" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{51DD28ED-649E-425F-8F76-CB2E5ACFEE21}">
+                <File Id="fil1A5726213F1F691552BB7A96FE734D09" KeyPath="yes" Source="$(var.publishDir)\bin\register.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp8C94F7DAD47EDE8B8A0CF4D120B3D57A" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{10BC06C2-682A-46F8-A37F-E9CAAAFB1A60}">
+                <File Id="filAD7DFAB25667115B5D564B0F5C3B0FA6" KeyPath="yes" Source="$(var.publishDir)\bin\resetpassword.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmpB5F323A97463E2F471E04CB21ABD5C6C" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{B87BE2C0-A5C1-44FF-93FE-FC956261B77F}">
+                <File Id="fil2BBDB877E67D090A26BCD4711D9AD1FA" KeyPath="yes" Source="$(var.publishDir)\bin\resetpasswordconfirmation.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp269285B7015802E33161A9E3EE671958" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{20046C70-27AB-452A-A92B-48A173FC058F}">
+                <File Id="filB40CEF5A212F4B37110773F1FE8A11DD" KeyPath="yes" Source="$(var.publishDir)\bin\sendcode.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp547EE6D9287D5D682AE5BAC70B48A3AC" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{2F1C7A50-F422-437F-B0F3-577C78A1E34A}">
+                <File Id="fil496C3DA19B0B9D6142E74E43770C74EF" KeyPath="yes" Source="$(var.publishDir)\bin\setpassword.cshtml.68f676f.compiled" />
+            </Component>
+            <Component Id="cmpDAF7F7A52053686E394238043265A277" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{2F278BD4-54B0-47A3-B8AF-55B4EDF1D476}">
+                <File Id="fil55CD3DBEB6178DF458E61E3D517952F0" KeyPath="yes" Source="$(var.publishDir)\bin\StockExchange.dll" />
+            </Component>
+            <Component Id="cmpF2B53D06184486F7882338A635296D30" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{468A16C3-0981-4A9D-9709-EFE80471F6F9}">
+                <File Id="fil73D0225EC94AAF6105660F5F9F4F3BA3" KeyPath="yes" Source="$(var.publishDir)\bin\System.Net.Http.Formatting.dll" />
+            </Component>
+            <Component Id="cmp424F3D46075F4FEBDC3B9C9316377B6F" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{DF5A2F7B-68CE-4B98-866D-5F6CD20D0BFB}">
+                <File Id="filA08A863A592D3A6CDC622630678F8E8D" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.Helpers.dll" />
+            </Component>
+            <Component Id="cmp05B87CCC700E6DA59026245532ADC3AF" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{6CBA2C96-4EFE-48F9-AA9D-370833A6A708}">
+                <File Id="fil5C14EDC1081DC2BC70B64A64921F6799" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.Http.dll" />
+            </Component>
+            <Component Id="cmpE274D5EA6A9A32AD46FD6A28C8B0B42E" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{D30E1077-46AA-4114-9B14-1E658E1603AB}">
+                <File Id="fil703A5917602F84ABE39875F0E1BB9BC7" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.Http.WebHost.dll" />
+            </Component>
+            <Component Id="cmp2672B102F5F44AB86EEB014266BF4120" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{C8879FA1-DB1E-4D44-8CC4-D08D6CCED2CF}">
+                <File Id="fil9CCE1838F17BDC6917798EC1030F6FDA" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.Mvc.dll" />
+            </Component>
+            <Component Id="cmp16C2866B0D309247755BD6022F170AD8" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{24D18DB6-70BA-4458-83EC-749EFA3932E2}">
+                <File Id="fil8825BF5899EA7FF29664E8D37E55CF0A" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.Optimization.dll" />
+            </Component>
+            <Component Id="cmpEAC3ED1DDC7C6D1F18ABD57B858FEF35" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{973C29C6-70D8-445A-BACB-5A7266EC2DBD}">
+                <File Id="fil2504A312384CA8441EE52747B2339F08" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.Razor.dll" />
+            </Component>
+            <Component Id="cmp0802EBEED53EC27A0B3D47E6B3975A30" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{B96822E9-C8CB-43B3-9AE5-2921C75A5C64}">
+                <File Id="fil5168A74059162034B17B343B2FC5E026" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.WebPages.Deployment.dll" />
+            </Component>
+            <Component Id="cmpFDA755C4E5C84F8B33B899EF242B4D00" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{72DD3BE2-68AF-4F8E-8088-3E754E8353A6}">
+                <File Id="fil265967499C38B6D49A86B2390F13711D" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.WebPages.dll" />
+            </Component>
+            <Component Id="cmpE41F8EB78B97F4A0D4D8C4DB31109AB3" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{19127C57-BF10-44AF-84E1-43F8BAB0DA55}">
+                <File Id="filF7607EBDED08F08860259BBA86246F60" KeyPath="yes" Source="$(var.publishDir)\bin\System.Web.WebPages.Razor.dll" />
+            </Component>
+            <Component Id="cmp6295E405B6D642C318FA27210F7140F5" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{F859145D-EED2-4961-905B-647312229C6B}">
+                <File Id="fil76D27818D4DCF68494CD6979B84D3810" KeyPath="yes" Source="$(var.publishDir)\bin\verifycode.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp7389C7BCC663C267F1B999728BDCFD10" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{C1143D6E-1BCE-43C7-9752-F1D5D902DD4F}">
+                <File Id="filD295C4E77CDCE71E963640EC59C891D0" KeyPath="yes" Source="$(var.publishDir)\bin\verifyphonenumber.cshtml.68f676f.compiled" />
+            </Component>
+            <Component Id="cmp54FDAE41C749EF282756F9C5581343A3" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{0FFF8422-327B-404F-841B-3A9A3AC824AB}">
+                <File Id="filE27C7DF9EC5A88CCF3FFB2505AC5ED83" KeyPath="yes" Source="$(var.publishDir)\bin\WebGrease.dll" />
+            </Component>
+            <Component Id="cmp9EDF0455461CBD1289E170AB9F8C7893" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{077EC000-1604-47F6-8FB2-1257A615B231}">
+                <File Id="filFCF79D88743D859383780D2349EEE1C8" KeyPath="yes" Source="$(var.publishDir)\bin\_externalloginslistpartial.cshtml.5f83eb8c.compiled" />
+            </Component>
+            <Component Id="cmp45AD3AEC827EE8E7E8F3107B8611CFA4" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{626510FF-ECEE-4423-9A39-F4054721D3B4}">
+                <File Id="filD29EA7FD0CC3DFF98B68AE55F516B8AB" KeyPath="yes" Source="$(var.publishDir)\bin\_layout.cshtml.639c3968.compiled" />
+            </Component>
+            <Component Id="cmp2129AB6AD6A5B977CAB43A398AE010F1" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{3B9A44B0-B911-4BE0-ACA5-1958DE5E60C6}">
+                <File Id="filCF11FE647506C3C8D87EA3E809854ED4" KeyPath="yes" Source="$(var.publishDir)\bin\_loginpartial.cshtml.639c3968.compiled" />
+            </Component>
+            <Component Id="cmpEDBB2ECC47EAC61A8725A0F0123BBC60" Directory="dirF18F960DDAA587F3E0D1351080C39B6B" Guid="{337DA501-ECB2-49AA-A102-7190B205CC33}">
+                <File Id="fil228E6B6049076D89F157ED1252102F43" KeyPath="yes" Source="$(var.publishDir)\bin\_viewstart.cshtml.65a2d1ee.compiled" />
+            </Component>
+            <Component Id="cmp80A18B556B5C201206554C00673AB30F" Directory="dir59974E7D7DB4F57FD9EBC3E7E8F5C7A6" Guid="{9689D2EF-3E25-40AA-A68B-2892A7F66773}">
+                <File Id="fil57251076556BA659A30FAB9B12E7B733" KeyPath="yes" Source="$(var.publishDir)\Content\bootstrap.css" />
+            </Component>
+            <Component Id="cmp8199687422FA3A32F685C159A8ACD636" Directory="dir59974E7D7DB4F57FD9EBC3E7E8F5C7A6" Guid="{C4DE44FE-6AA2-410D-9321-4478FB6A2718}">
+                <File Id="filB1E416160A3D1353871DE2AAE61C5A01" KeyPath="yes" Source="$(var.publishDir)\Content\bootstrap.min.css" />
+            </Component>
+            <Component Id="cmp8E135DD4F487A581E59FEF3BAA759958" Directory="dir59974E7D7DB4F57FD9EBC3E7E8F5C7A6" Guid="{DCE7CCA2-8F29-481A-AAF2-25003EEDACED}">
+                <File Id="filA9214E76CC6F530367E16D0BF92BEE19" KeyPath="yes" Source="$(var.publishDir)\Content\front.jpg" />
+            </Component>
+            <Component Id="cmp8ADA88F523DABCED1938B29D9A0F54B8" Directory="dir59974E7D7DB4F57FD9EBC3E7E8F5C7A6" Guid="{7A6FEA85-07F2-4DB3-AC64-20B5DAF1B817}">
+                <File Id="filCA35F82DB13A7B497CE548C8F38D33FB" KeyPath="yes" Source="$(var.publishDir)\Content\login.jpg" />
+            </Component>
+            <Component Id="cmp44EC4937B6FDCF7ADDDFFA37AE620A06" Directory="dir59974E7D7DB4F57FD9EBC3E7E8F5C7A6" Guid="{8999ECFA-B4B2-4CEF-8A28-A4EFD0E27FC4}">
+                <File Id="filF4F4602660A409BE926EF6F2256408A1" KeyPath="yes" Source="$(var.publishDir)\Content\Site.css" />
+            </Component>
+            <Component Id="cmp206A424E3CB87A5125162C82B185A66F" Directory="dir58623E97E90CB332F059315D59331719" Guid="{0A3BC7A6-F43C-4B8B-B6C4-EC01FEB96A77}">
+                <File Id="fil0B8430150128A442A289FC8C04CF70AD" KeyPath="yes" Source="$(var.publishDir)\fonts\glyphicons-halflings-regular.eot" />
+            </Component>
+            <Component Id="cmp56C4A036BA83F0A1F85CD79D5A515D3A" Directory="dir58623E97E90CB332F059315D59331719" Guid="{E1CBB240-7139-486E-8B6A-CFA3FAA0A6EB}">
+                <File Id="filF1019A0F4F665A81A7BF54434986D257" KeyPath="yes" Source="$(var.publishDir)\fonts\glyphicons-halflings-regular.svg" />
+            </Component>
+            <Component Id="cmp38EE45EB9ECB42551553136C4C382788" Directory="dir58623E97E90CB332F059315D59331719" Guid="{BA398642-A405-4D1D-8F04-698A5CA1C066}">
+                <File Id="fil419CFBE58D0F9731B66B96B7E863EFA9" KeyPath="yes" Source="$(var.publishDir)\fonts\glyphicons-halflings-regular.ttf" />
+            </Component>
+            <Component Id="cmp13729EB380EE0EA86326D9B8AC4B0167" Directory="dir58623E97E90CB332F059315D59331719" Guid="{7FC84DD5-22DC-4179-8203-7E4EE7489987}">
+                <File Id="filC4DA266228887754D89E1132139A3F7A" KeyPath="yes" Source="$(var.publishDir)\fonts\glyphicons-halflings-regular.woff" />
+            </Component>
+            <Component Id="cmp2E180E8DBFFCC603C7C93D3C5F74F6D9" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{D4E4F8DC-DADB-441B-88E4-69EA077351B8}">
+                <File Id="filA8EEBACFEC0F2A97EE2C65D3FC756C02" KeyPath="yes" Source="$(var.publishDir)\Scripts\bootstrap.js" />
+            </Component>
+            <Component Id="cmpC7EBD99FDC13D1ADEDCED29D9E426279" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{D286F21F-E80F-4797-BABC-5278A2E86407}">
+                <File Id="filA7019A89299E1E28C33FE6A89C4DC633" KeyPath="yes" Source="$(var.publishDir)\Scripts\bootstrap.min.js" />
+            </Component>
+            <Component Id="cmp79135F35ACB5025CE2E5220F3C48D498" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{4CB9577B-1591-422A-B1A6-C5B63CC9DF82}">
+                <File Id="fil78A584FA9D2813EAD99A74BA98BCFABF" KeyPath="yes" Source="$(var.publishDir)\Scripts\jquery-1.10.2.js" />
+            </Component>
+            <Component Id="cmpF735EC257910468B0A8FA73901EAA3DA" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{077CDF6D-C587-4050-AAE3-783937D9BE85}">
+                <File Id="fil32611159F462CC59FC2024033DD7A624" KeyPath="yes" Source="$(var.publishDir)\Scripts\jquery-1.10.2.min.js" />
+            </Component>
+            <Component Id="cmpB2AB8755975453A756CB30D09827085B" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{F1C03A37-1B4F-48C2-8E8F-AE2F74942E8C}">
+                <File Id="filB6E221869D927E325514EDA4E434413C" KeyPath="yes" Source="$(var.publishDir)\Scripts\jquery-1.10.2.min.map" />
+            </Component>
+            <Component Id="cmp3909F2A69182825A31E1C0B674586497" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{BF49A1F1-7AE0-4B4D-8AC3-6E1A13E3940D}">
+                <File Id="fil00C229EEFCA4ED47BE1FB91E1E937B00" KeyPath="yes" Source="$(var.publishDir)\Scripts\jquery.validate.js" />
+            </Component>
+            <Component Id="cmp27F92855AB2B81DC38F9983A66AF7FBA" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{71BA9E13-5411-4566-B48A-ADA2A7129DDE}">
+                <File Id="fil167C1EFC1A59F07DB4705298678C01A9" KeyPath="yes" Source="$(var.publishDir)\Scripts\jquery.validate.min.js" />
+            </Component>
+            <Component Id="cmp0C5C37703E836722C4B547A9019B0916" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{04D9A03B-0373-4EF3-838D-3F40F1366D62}">
+                <File Id="filCC8F49691DD0D42295BFB374B5FEC769" KeyPath="yes" Source="$(var.publishDir)\Scripts\jquery.validate.unobtrusive.js" />
+            </Component>
+            <Component Id="cmp7D459CE2D2DCA68654C946545678C2DF" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{620A7C9E-1528-4592-AA09-FB71C3CA040B}">
+                <File Id="filC69F1826B112CF80996496C8AE701F0F" KeyPath="yes" Source="$(var.publishDir)\Scripts\jquery.validate.unobtrusive.min.js" />
+            </Component>
+            <Component Id="cmpD6DCF81B3E5EA850EFED17F424B51D16" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{FF126B34-6E00-4430-B74B-0785CDDF50B8}">
+                <File Id="fil6B0ED391BAFD6B7108BBD31360034580" KeyPath="yes" Source="$(var.publishDir)\Scripts\modernizr-2.6.2.js" />
+            </Component>
+            <Component Id="cmpE21B459779EF8D5AE853A188B3138BC5" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{E04F0DC1-6FA2-4EF6-9627-E9F404E87096}">
+                <File Id="filBA68B629128F8E1F6AA2C3DB42B620B1" KeyPath="yes" Source="$(var.publishDir)\Scripts\respond.js" />
+            </Component>
+            <Component Id="cmp4323FD5729CB2F2FE8DEFDD147710C62" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{766E39FB-CA9B-475F-A266-861404832A0F}">
+                <File Id="filF7CB6ACFA1BFEE33CBB8D7A5F6F32939" KeyPath="yes" Source="$(var.publishDir)\Scripts\respond.min.js" />
+            </Component>
+            <Component Id="cmpD12ACF4E3E2D78696CBD0D64EA3ECA81" Directory="dirDC3A0DE3797C9F66B52B269893B8CFDF" Guid="{B719B16C-E510-40A9-A37B-424B683346BF}">
+                <File Id="fil8FCCEF97870DFE00200F9B3DB468D001" KeyPath="yes" Source="$(var.publishDir)\Scripts\_references.js" />
+            </Component>
+            <Component Id="cmp480504AFF0937A747AEE454E7F22D4CA" Directory="dir5A0A09D1C6BE2791C7DA1DA1C88C6694" Guid="{F1F85D50-0BFE-4C74-BB94-4AD5050399DB}">
+                <File Id="filEEB69AE51C8EF8AC551661951C7C1F2A" KeyPath="yes" Source="$(var.publishDir)\Scripts\Main\quotes.js" />
+            </Component>
+            <Component Id="cmp5079294A840ECAAAFD9956F28523CB25" Directory="dir986FF66F59BDB66C77B8931CC9BF21F4" Guid="{2D1B6540-AE1A-4974-B09F-E79CC3160529}">
+                <File Id="filE24D4AE6970C693F6F35938AC9F4CDEC" KeyPath="yes" Source="$(var.publishDir)\Views\Web.config" />
+            </Component>
+            <Component Id="cmp105370D6DC39696D3922AFD75FB7136C" Directory="dir986FF66F59BDB66C77B8931CC9BF21F4" Guid="{0E9D218D-4FAC-4BB0-AE79-17A745F7EC63}">
+                <File Id="filB00B09DDF08E688F6CF8E89C751D28B3" KeyPath="yes" Source="$(var.publishDir)\Views\_ViewStart.cshtml" />
+            </Component>
+            <Component Id="cmpAC777B9E02F444CA7271EB4ADF5284CE" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{8EB1B07F-25EB-4F34-85AF-43D75CA7F412}">
+                <File Id="fil5F451906E33A24061B87D6106EA767D5" KeyPath="yes" Source="$(var.publishDir)\Views\Account\ConfirmEmail.cshtml" />
+            </Component>
+            <Component Id="cmp7BECA487962FBEC0199C8F0B9B3E7D40" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{F1591EE7-E38B-48CF-8BD9-F08418CB6ABF}">
+                <File Id="filFF60F06C6A7FB26E586FD167DB7B3577" KeyPath="yes" Source="$(var.publishDir)\Views\Account\ExternalLoginConfirmation.cshtml" />
+            </Component>
+            <Component Id="cmp8030B121E3A12D72344F79124DF51016" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{4DE5A8F6-EE33-4AB1-A16F-7E8402453297}">
+                <File Id="filD9AB51C15376F01F867E1A4A7DB36A56" KeyPath="yes" Source="$(var.publishDir)\Views\Account\ExternalLoginFailure.cshtml" />
+            </Component>
+            <Component Id="cmpCD584DD0E17293B8BFAEF98CC4D9807A" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{8818F861-0B66-40A1-9CEE-206567BD4690}">
+                <File Id="filD567264FE63F0F69F41FC5BB6D31CF6D" KeyPath="yes" Source="$(var.publishDir)\Views\Account\ForgotPassword.cshtml" />
+            </Component>
+            <Component Id="cmp8713D98ED2CCEB5295BE6FC78CDD09D2" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{8F0C1C2F-6BF5-4194-A000-D887A1B4BA97}">
+                <File Id="filBD8EE17D67048AD6D788447ACE7ED542" KeyPath="yes" Source="$(var.publishDir)\Views\Account\ForgotPasswordConfirmation.cshtml" />
+            </Component>
+            <Component Id="cmp8F80AD7D7F1EB610E2675B2F1DBD0116" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{D48AE3BF-ECEF-4256-B9A2-DAC572D604CD}">
+                <File Id="fil3DB83A27DCBA94234F36C8A0A32B12CF" KeyPath="yes" Source="$(var.publishDir)\Views\Account\Login.cshtml" />
+            </Component>
+            <Component Id="cmpEE835F913105C4CB51582FBCE78FA7A0" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{EF7AA6B8-31CD-4C1D-9B9A-0DB3DD7452AA}">
+                <File Id="filFF3725D59987CE04C90616D0F5F77808" KeyPath="yes" Source="$(var.publishDir)\Views\Account\Register.cshtml" />
+            </Component>
+            <Component Id="cmp1E67CD898B3C644EBD575C45CF9A1041" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{14FE128F-442A-40D3-8A89-37FD80AE6624}">
+                <File Id="fil06ED94D49AA8159C04B8986D802EB6CD" KeyPath="yes" Source="$(var.publishDir)\Views\Account\ResetPassword.cshtml" />
+            </Component>
+            <Component Id="cmpE58AF96748EB079DB47A8E2F9A1D0B5D" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{E2EDB30C-78A3-49D0-BF3D-5B6359FCD7AE}">
+                <File Id="fil67A98BC0899BD72639BCAC65D3003A0A" KeyPath="yes" Source="$(var.publishDir)\Views\Account\ResetPasswordConfirmation.cshtml" />
+            </Component>
+            <Component Id="cmp414CC2CA7B9AAA2F08776A61F91D8B6E" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{B640DD55-B02E-45A3-BF7B-E72DA2420276}">
+                <File Id="filC999F4A6629847F893C74DD9E057703C" KeyPath="yes" Source="$(var.publishDir)\Views\Account\SendCode.cshtml" />
+            </Component>
+            <Component Id="cmp303CF09C113E733A3444E5BB3F048D29" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{D5F9DC2F-06C4-4499-AE6E-ED082B44F42E}">
+                <File Id="fil7A0F3FE4FD6E7756AF5DEE87E7DE6990" KeyPath="yes" Source="$(var.publishDir)\Views\Account\VerifyCode.cshtml" />
+            </Component>
+            <Component Id="cmp2CBD13BD154D40EAE8E725039F8E2B66" Directory="dirCE15373B3823761CD3E9F4061F4AAE4A" Guid="{C1B5E453-681D-4E91-A672-8FA288930B4B}">
+                <File Id="filC3E231C05131A2811D8A45602098B758" KeyPath="yes" Source="$(var.publishDir)\Views\Account\_ExternalLoginsListPartial.cshtml" />
+            </Component>
+            <Component Id="cmp517415BC91B495A2E7F8221FE22DE55D" Directory="dirBF35C4DADC498778D9E4EF29EE55FB66" Guid="{55263E76-EA13-4511-9E96-63FCC5BFE798}">
+                <File Id="fil89402A8CB7A319943A3FEC45A6C8463D" KeyPath="yes" Source="$(var.publishDir)\Views\Home\About.cshtml" />
+            </Component>
+            <Component Id="cmp00095F6A5E29D2233C722BB2615A3CB9" Directory="dirBF35C4DADC498778D9E4EF29EE55FB66" Guid="{194C2C19-2EFB-462F-88E2-E957FD263CCF}">
+                <File Id="fil6F1025D746DB2C3EF96A5F3C8A04380E" KeyPath="yes" Source="$(var.publishDir)\Views\Home\Contact.cshtml" />
+            </Component>
+            <Component Id="cmp8922A1EF7EFBFE86922083FFBB7CDE5B" Directory="dirBF35C4DADC498778D9E4EF29EE55FB66" Guid="{0F8915DD-5551-43EC-A6E8-19C6C0FE7A73}">
+                <File Id="fil94481ECA3835D76D750492CE5239F1D2" KeyPath="yes" Source="$(var.publishDir)\Views\Home\Index.cshtml" />
+            </Component>
+            <Component Id="cmpAE7B8602B9878DE9E51B7ECCC9C2094D" Directory="dir2677AAC46E0EC957FA6EF39E43CCBCA0" Guid="{481A0AFC-A9B4-4E24-BF77-9867133E65F2}">
+                <File Id="filCE105B89D565170C957118B8E97A7CF7" KeyPath="yes" Source="$(var.publishDir)\Views\Manage\AddPhoneNumber.cshtml" />
+            </Component>
+            <Component Id="cmpF7BADB99488EF28A349F1F73DB3D2F61" Directory="dir2677AAC46E0EC957FA6EF39E43CCBCA0" Guid="{573C3265-5CB1-41AD-84C7-AD392E3E8C04}">
+                <File Id="fil346D111DF71252CF9126A392877C2908" KeyPath="yes" Source="$(var.publishDir)\Views\Manage\ChangePassword.cshtml" />
+            </Component>
+            <Component Id="cmpBBEF8C96C4DE5E0BFC9AF1A92003FA42" Directory="dir2677AAC46E0EC957FA6EF39E43CCBCA0" Guid="{D83BF06F-09BC-4F3A-BD12-D6CA94540693}">
+                <File Id="fil6C0A40B466F8215C25F85239D6B92754" KeyPath="yes" Source="$(var.publishDir)\Views\Manage\Index.cshtml" />
+            </Component>
+            <Component Id="cmpEE65DF503F4C208BEF2FC0ADB57AFEEF" Directory="dir2677AAC46E0EC957FA6EF39E43CCBCA0" Guid="{DF0FC44E-7FD5-45E2-8532-483B720CCD2F}">
+                <File Id="fil59CE0322A4BA3301D14DFE170679A725" KeyPath="yes" Source="$(var.publishDir)\Views\Manage\ManageLogins.cshtml" />
+            </Component>
+            <Component Id="cmpB0C7D70023B1ADEE4986ED00E5AA3360" Directory="dir2677AAC46E0EC957FA6EF39E43CCBCA0" Guid="{A46652EF-1194-446E-9ECF-70018624324E}">
+                <File Id="fil378EC7E65A473864AEC27784AF169B99" KeyPath="yes" Source="$(var.publishDir)\Views\Manage\SetPassword.cshtml" />
+            </Component>
+            <Component Id="cmp956F6F1178C8646E3C47E04BC79D001E" Directory="dir2677AAC46E0EC957FA6EF39E43CCBCA0" Guid="{058765C3-304D-49CD-84D8-E762A98EB552}">
+                <File Id="filF75C44566BB45B6F7583309FA6B6E80A" KeyPath="yes" Source="$(var.publishDir)\Views\Manage\VerifyPhoneNumber.cshtml" />
+            </Component>
+            <Component Id="cmpE09C3F44A3701AA9BE4D90C976B49F0E" Directory="dir16B6ED62FB7051AAD81C2BF0FCDA49B4" Guid="{6CEDA83C-9BC4-4042-8BB1-0494D468FE65}">
+                <File Id="fil04D7BD71ED583124FBB0F5748D20A7CE" KeyPath="yes" Source="$(var.publishDir)\Views\Shared\Error.cshtml" />
+            </Component>
+            <Component Id="cmp92E203594BB6839D9D7DA378E4711C4A" Directory="dir16B6ED62FB7051AAD81C2BF0FCDA49B4" Guid="{8F87098B-2C1A-4EE4-8CA6-9A3B89A42ABB}">
+                <File Id="filB52A0F7E3960ADBE4CD277E2B25A3CEB" KeyPath="yes" Source="$(var.publishDir)\Views\Shared\Lockout.cshtml" />
+            </Component>
+            <Component Id="cmp953F5C085A6C67BD9C3044DEAB64588C" Directory="dir16B6ED62FB7051AAD81C2BF0FCDA49B4" Guid="{B80F9C2B-6169-42FE-9547-3AFF59557B12}">
+                <File Id="filE9CC0AA405E9DC94A90D325B5BFC67DB" KeyPath="yes" Source="$(var.publishDir)\Views\Shared\_Layout.cshtml" />
+            </Component>
+            <Component Id="cmp4A954512D8B2C31D628E60B1397E1E42" Directory="dir16B6ED62FB7051AAD81C2BF0FCDA49B4" Guid="{EBA3A16A-C30C-4DBF-B561-219854341E6C}">
+                <File Id="fil0E9E09E794EEEC82C0122D3233710B21" KeyPath="yes" Source="$(var.publishDir)\Views\Shared\_LoginPartial.cshtml" />
+            </Component>
+            <Component Id="cmpDDEBB7C1EA7D6F678B4B237AF3A48C0A" Directory="dir2FFEB9B0F471EEAFEA3D61AFC329E35A" Guid="{66C6E210-4166-4A1C-9DA6-EADF247EE566}">
+                <File Id="filAC5EB3482615DD93F53DA8B5764956F9" KeyPath="yes" Source="$(var.publishDir)\Views\Stocks\Create.cshtml" />
+            </Component>
+            <Component Id="cmp6ABF20A59749F363C00621749C1C0715" Directory="dir2FFEB9B0F471EEAFEA3D61AFC329E35A" Guid="{65362285-4F8B-496D-887E-5247FD1F40AA}">
+                <File Id="filCD375B2A40DCACD5C293CD1261FCA781" KeyPath="yes" Source="$(var.publishDir)\Views\Stocks\Delete.cshtml" />
+            </Component>
+            <Component Id="cmp3F6D4B44489E2E3CE63B8965403C87F5" Directory="dir2FFEB9B0F471EEAFEA3D61AFC329E35A" Guid="{F70869FD-6F82-43FD-A02B-7A2E6EFD164B}">
+                <File Id="filD2E613891800F5B18D234699A4712394" KeyPath="yes" Source="$(var.publishDir)\Views\Stocks\Details.cshtml" />
+            </Component>
+            <Component Id="cmpEDF792406C489CF4DD60C931EA582277" Directory="dir2FFEB9B0F471EEAFEA3D61AFC329E35A" Guid="{1034D260-56EA-4AE8-9843-C0E47B3E1C21}">
+                <File Id="fil37B01D5A13B3B35A9AC38C827E730009" KeyPath="yes" Source="$(var.publishDir)\Views\Stocks\Edit.cshtml" />
+            </Component>
+            <Component Id="cmpD2A149CFAEE7494EDA301AE94EF3B688" Directory="dir2FFEB9B0F471EEAFEA3D61AFC329E35A" Guid="{2B969FE9-E4DE-472D-BED0-7A7EC97324BF}">
+                <File Id="fil9CA7ABE006D30CB14E92DD7119126F5D" KeyPath="yes" Source="$(var.publishDir)\Views\Stocks\Index.cshtml" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir986FF66F59BDB66C77B8931CC9BF21F4">
+            <Directory Id="dir16B6ED62FB7051AAD81C2BF0FCDA49B4" Name="Shared" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir986FF66F59BDB66C77B8931CC9BF21F4">
+            <Directory Id="dir2677AAC46E0EC957FA6EF39E43CCBCA0" Name="Manage" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir986FF66F59BDB66C77B8931CC9BF21F4">
+            <Directory Id="dir2FFEB9B0F471EEAFEA3D61AFC329E35A" Name="Stocks" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirDC3A0DE3797C9F66B52B269893B8CFDF">
+            <Directory Id="dir5A0A09D1C6BE2791C7DA1DA1C88C6694" Name="Main" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir986FF66F59BDB66C77B8931CC9BF21F4">
+            <Directory Id="dirBF35C4DADC498778D9E4EF29EE55FB66" Name="Home" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir986FF66F59BDB66C77B8931CC9BF21F4">
+            <Directory Id="dirCE15373B3823761CD3E9F4061F4AAE4A" Name="Account" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>

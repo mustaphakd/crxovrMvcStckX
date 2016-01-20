@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:iis="http://schemas.microsoft.com/wix/IIsExtension"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension"
+       >
+	<Product Id="*" Name="StockExchangePlatform Setup" Language="1033" Version="1.0.0.0" Manufacturer="Moustapha Kone" UpgradeCode="3fa0f90a-5a5d-4c92-9f8e-2d27b8686b17">
+		<Package InstallerVersion="405" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+    <!--Checks for conditions-->
+    <PropertyRef Id="NETFRAMEWORK45" />
+    <Condition Message="The .NET Framework 4.5.1 was not found.  Stopping installation.">
+      <![CDATA[Installed OR (NETFRAMEWORK45 >= "#378675")]]>
+    </Condition>
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLLOCATION" />
+
+        <!-- Creating directories -->
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <!-- Install stuff into program files folder. -->
+            <Directory Id="ProgramFilesFolder">
+                <!-- In program files create folder with name MyWeb. -->
+                <Directory Id="INSTALLLOCATION" Name="MyWeb">
+                    <!-- This is the folder where the website content will be located --> 
+                    <Directory Id="MYWEBWEBSITE" Name="Website">
+                        <!-- Continue in DirectoryRef with specific name -->
+                    </Directory>
+                    <!-- Here you can add another directories -->
+                </Directory>
+            </Directory>
+        </Directory>
+
+        <!-- Complete feature which will be installed. -->
+        <Feature Id="Complete"
+             Title="Moustapha Kone- Stock Exchange Watcher Web App"
+             Level="1"
+             Display="expand"
+             ConfigurableDirectory="INSTALLLOCATION">
+             
+             <!-- Main content of the Complete feature. -->
+            <Feature Id="MainContent"
+                     Title="Stock Exchange Watcher Web App"
+                     Description="Web Application content"
+                     Level="1">
+                
+                <!-- Include IIS Configuration. -->
+                <ComponentGroupRef Id="MyWebIssConfiguration" />
+                
+                <!-- Include web content. -->
+                <ComponentGroupRef Id="MyWebWebComponents" />
+                
+                <!-- Perform changes in the web.config file. -->
+                <ComponentRef Id="WebConfigCmp" />
+
+            </Feature>
+        </Feature>
+
+        <DirectoryRef Id="MYWEBWEBSITE">
+            <!-- Component handling the web.config -->
+            <Component Id="WebConfigCmp" Guid="">
+                <!-- Copy web.config to MYWEBWEBSITE folder. -->
+                <File Id="WebConfigFile" KeyPath="yes" 
+                  Source="$(var.publishDir)\Web.config" Vital="yes" />
+                <util:XmlFile Id="ModifyConnectionString"
+                         Action="setValue"
+                         Permanent="yes"
+                         ElementPath="//configuration/connectionStrings/add[\[]@name='DefaultConnection'[\]]"
+                         Name="connectionString"
+                         File="[#WebConfigFile]"
+                         Value="[CONNECTION_STRING]"
+                         SelectionLanguage="XPath"
+                         Sequence="1" />
+            </Component>
+        </DirectoryRef>
+      
+   <!-- License and images -->
+        <WixVariable Id="WixUILicenseRtf" Value="$(var.MyWebResourceDir)\License.rtf" />
+
+        <!-- Specify UI -->
+        <UIRef Id="MyWebUI" />
+	</Product>
+</Wix>

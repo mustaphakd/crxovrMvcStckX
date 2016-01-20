@@ -1,0 +1,44 @@
+﻿@model IEnumerable<StockExchange.Models.Stock>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code, new { data_quote_name = item.Code})
+        </td>
+        <td data-quote="@item.Code" class="quoteCls">
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td >
+            @* @Html.ActionLink("Edit", "Edit", new { id=item.StockId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.StockId }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id = item.StockId })
+        </td>
+    </tr>
+}
+
+</table>
+@section Scripts {
+
+    <script src="~/Scripts/Main/quotes.js"></script>
+}
